@@ -1,0 +1,23 @@
+
+article{
+	text-align: center;
+}
+h1{
+	color: Crimson;
+}
+
+img{
+	width: 300px;
+	border: 4px double Fuchsia;
+}
+
+
+a {
+	color:DarkGreen; 
+	text-decoration: underline;
+}
+
+a:hover {
+	color:DarkGreen; 
+	text-decoration: none;
+}
