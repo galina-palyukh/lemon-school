@@ -21,3 +21,7 @@ a:hover {
 	color:DarkGreen; 
 	text-decoration: none;
 }
+ol{
+	color: red;
+	text-align: left;
+}

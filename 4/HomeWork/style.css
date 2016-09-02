@@ -1,0 +1,41 @@
+*{ 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	font-family: sans-serif; 
+	letter-spacing: -1px; 
+} 
+.wrapper{ 
+	width: 800px; 
+	color: white; 
+	font-size: 32px; 
+	line-height: 24px;
+} 
+.row{ 
+	background-color:#7ea6da; 
+} 
+header, 
+footer{ 
+	height: 140px; 
+	background-color: #706355; 
+	padding: 50px 30px; 
+} 
+.sidebarLeft, 
+.sidebarRight{ 
+	float: left; 
+	background-color: #7ea6da; 
+	width: 175px; 
+	padding-top: 20px; 
+	text-align: center;
+} 
+.content{ 
+	float: left; 
+	background-color: white; 
+	color: black; 
+	width: 450px; 
+	font-size: 20px; 
+	padding: 20px 40px; 
+} 
+.clear{ 
+	clear: both; 
+}
