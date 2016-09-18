@@ -164,7 +164,7 @@ header{
 	margin: 23px 0;
 }
 
-/*.content-bottop*/
+/*.content-bottom*/
 .content-bottom{
 	min-height: 532px;
 	background-color: #f1f1f1;
@@ -259,11 +259,15 @@ footer{
 	background-color: #69d2e7;
 	color: #fff;
 }
+.footer-wrapper{
+	width: 1200px;
+	margin: auto;
+}
 footer .footer-left{
 	float: left;
-	margin: 29px 0 0 156px;
+	margin: 29px 0 0 0;
 }
 footer .footer-right{
 	float:right;
-	margin: 25px 126px 0 0;
+	margin: 25px 0 0 0;
 }
