@@ -1,0 +1,214 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #f7f;
+	font-family:'Lato', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+/*HEADER*/
+header{
+    width: 100%;
+    /*min-height: 167px;*/
+    background-color: #fff;
+}
+.nav-header-top{
+	font-family:'Lato', sans-serif;
+	font-size: 11px;
+	min-height: 38px;
+	color: #393939;
+    background-color: #f2f2f2;
+  /*  padding-left: 80px;
+    padding-right: 75px;*/
+    padding: 14px 77px 14px 79px;
+}
+.nav-header-top ul{
+	text-transform: uppercase;
+	float: right;
+}
+[class^="nav-header"] li{
+	display: inline-block;
+	margin-right: 31px;
+}
+[class^="nav-header"] li:nth-child(7){
+	margin-right: 0;
+}
+
+/*.nav-header-top li:nth-child(even){
+	margin-left: 34px;
+	margin-right: 34px
+	
+}*/
+.icon-phone::before{
+	content: "";
+	background:url(../images/sprite.png) no-repeat -86px -35px;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin-right: 18px;
+}
+
+.nav-header-bottom .left,
+.nav-header-bottom .center,
+.nav-header-bottom .right{
+	width: 33.3%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav-header-bottom .left{
+	font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    padding-left: 79px;
+}
+.nav-header-bottom .left li{
+	padding-right: 22px;
+}
+.nav-header-bottom h1{
+	font-family: 'krinkes_decor_personal_useRg';
+	font-size: 72px;
+	text-align: center;
+	color: #000;
+	font-weight: 100;
+	margin-top: 13px;
+	/*padding: 43px 0 62px 79px;*/
+}
+.right-item-links{
+	float: left;
+	width: 70%;
+	text-align: center;
+}
+.social-link{
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    border: 2px solid #d9bf8f;
+    margin-right: 11px;
+	background-image:url(../images/sprite.png);
+	display: inline-block;
+	background-repeat: no-repeat;
+}
+
+.social-link-fb{
+	background-position:4px 5px;
+}
+.social-link-tw{
+	background-position: -20px 4px;
+}
+.social-link-pi{
+	background-position: -48px 3px;
+}
+.social-link-inst{
+	background-position: -75px 4px;
+}
+.right-black-block{
+	width: 30%;
+	float: left;
+	
+}
+
+.black-block{
+	float: right;
+	width: 90px;
+	height: 35px;
+	background-color: #000;
+	text-align: center;
+	padding-top: 8px;
+	margin-right: 75px;
+
+}
+.black-block span{
+	color: #fff;
+	text-transform: uppercase;
+	font-family:'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	
+}
+.black-block span::after{
+	content: "";
+    background: url(../images/sprite.png) no-repeat -81px -54px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 11px;
+}
+
+/*STATIC-BLOCK*/
+.static-block{
+	/*width: 80%;*/
+    margin: auto;
+}
+
+.breadcrumbs1,
+.breadcrumbs2,
+.breadcrumbs3{
+	float: left;
+    background-color: #d9bf8f;
+    /* padding: 5px 28px; */
+    width: 28.5%;;
+    padding-top: 10px;
+    height: 100px;
+    position: relative;
+    margin: 0 8px 0 60px;
+}
+[class^="breadcrumbs"] h1{
+ 	font-size: 30px;
+ 	font-family:'Lato', sans-serif;
+ 	font-weight: bold;
+}
+.breadcrumbs-img{
+	float: left;
+}
+
+.breadcrumbs1::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 42px solid #d9bf8f;
+    right: -42px;
+}
+
+.breadcrumbs2::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    border-width: 50px 0 50px 42px;
+    border-style: solid;
+    border-color:#d9bf8f #d9bf8f #d9bf8f transparent;
+    left: -42px;
+}
+
+.breadcrumbs2::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    border-top: 50px solid #d9bf8f;
+    border-bottom: 50px solid #d9bf8f;
+    border-right: 42px solid transparent;
+    right: -42px;
+}
+.breadcrumbs3::before{
+  content: "";
+  position: absolute;
+  top: 50%; 
+  margin-top: -50px;   
+  border-width: 50px 42px 50px 0;
+  border-style: solid;
+  border-color: transparent #d9bf8f transparent transparent  ;
+  left: -42px;
+}
+
+

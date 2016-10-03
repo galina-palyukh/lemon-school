@@ -19,3 +19,5 @@
 9. Таблица
 
 10. Формы
+
+11. Responsive:header+footer+1block
