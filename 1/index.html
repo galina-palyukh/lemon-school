@@ -4,21 +4,40 @@
 	<meta charset="UTF-8">
 	<title>Беготня</title>
 </head>
+<style>
+*{
+	margin: 0;
+    padding: 0;
+}
+	#hexagon {
+    width: 100px;
+    height: 55px;
+    background: #fc5e5e;
+    position: relative;
+    margin:auto;
+}
+#hexagon:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #fc5e5e;
+}
+.header{
+	background-color: grey;
+}
+.block{
+	background-color: #f0f;
+}
+</style>
 <body>
-	<article>
-		<h1>Бег - это весело!</h1>
-		<p><strong>Бег</strong> — один из способов передвижения (<a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BA%D0%BE%D0%BC%D0%BE%D1%86%D0%B8%D1%8F" target="_blank">локомоции</a>) человека и животных; отличается наличием так называемой «фазы полёта» и осуществляется в результате сложной координированной деятельности скелетных мышц и конечностей.</p>
-		<figure>
-			<img src="images/run.gif" alt="Бегущий человек">
-			<figcaption>Бегущий человек</figcaption>
-		</figure>
-		<h2>Бегать можно:</h2>
-		<ul>
-			<li>Одному.</li>
-			<li>В компании.</li>
-			<li>Задом-наперед.</li>
-		</ul>
-		<p>Побежали!</p>
-	</article>	
+	<div class="header">
+		<div id="hexagon">thsrtghsrth </div>
+	</div>
+	<div class="block"></div>
 </body>
 </html>
