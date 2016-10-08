@@ -15,3 +15,14 @@ $('#slider').slick({
 
 	// ]
 });
+$(".burger").on('click',function(){
+		$(this).toggleClass('active');
+		$('.mobile-menu').slideToggle(400);
+	});
+
+$(window).on('resize', function(){
+		if ($(window).width() > 550) {
+			$('.mobile-menu').css('display', 'none');
+			$('.burger').removeClass('active');
+		}
+	});

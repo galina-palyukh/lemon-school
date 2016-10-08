@@ -8,6 +8,7 @@ body{
 }
 a{
 	text-decoration: none;
+    color: #000;
 }
 a:active,
 a:hover {
@@ -18,20 +19,79 @@ ul{
     display: inline-block;
 }
 li{
-    display: inline-block;
+   
 }
 
 /*HEADER_TOP*/
+
+.mobile-menu{
+    display: none;
+    clear: both;
+    text-align: left;
+    border-top: 1px solid white;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav-header-mobile {
+    width: 100%;
+}
+
+.nav-header-mobile li {
+    padding: 8px 0;
+}
+
+
+.burger {
+    float: right;
+    width: 40px;
+    height: 30px;
+    background-color: #fff;
+    display: none;
+    position: relative;
+    top: -9.5px;
+}
+.serif {
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #000;
+    left: 10%;
+    transition: transform .3s ease-in-out;
+}
+.serif--1 {
+    top: 8px;
+}
+.serif--2 {
+    top: 15px;
+}
+.serif--3 {
+    top: 22px;
+}
+/*.burger.active [class^="serif"]{
+    background-color: grey;
+}
+*/
+
+
+
+
+
 .wrapper-header-top{
 	color: #393939;;
     background-color: #f2f2f2;
-    padding: 12px 0;
+    /*padding: 12px 10px;*/
+    min-height: 37px;
 }
 .header-top,
 .header-bottom{
 	max-width: 1320px;
     margin: 0 auto;
 }
+.header-top .telephone{
+    float: left;
+}
+
 .header-top .telephone::before{
 	content: '';
 	display: inline-block;
@@ -40,18 +100,21 @@ li{
 	height: 10px;
 	margin-right: 18px;
 }
-.header-top .nav-header{
+.header-top .nav-header-main{
 	float: right;
 	text-transform: uppercase;
 }
-.header-top .nav-header li:nth-child(1),
-.header-top .nav-header li:nth-child(2),
-.header-top .nav-header li:nth-child(3){
+.header-top .nav-header-main li{
+    display: inline-block;
+}
+.header-top .nav-header-main li:nth-child(1),
+.header-top .nav-header-main li:nth-child(2),
+.header-top .nav-header-main li:nth-child(3){
 	margin-right: 58px;
 }
-.header-top .nav-header li:nth-child(1)::after,
-.header-top .nav-header li:nth-child(2)::after,
-.header-top .nav-header li:nth-child(3):after{
+.header-top .nav-header-main li:nth-child(1)::after,
+.header-top .nav-header-main li:nth-child(2)::after,
+.header-top .nav-header-main li:nth-child(3):after{
     content: '';
     display: inline-block;
     width: 1px;
@@ -66,6 +129,7 @@ li{
 
 .header-bottom{
 	min-height: 128px;
+    padding: 0 10px;
 }
 .header-bottom .nav-menu,
 .header-bottom .wrapper-logo,
@@ -249,5 +313,16 @@ li{
   border-style: solid;
   border-color: transparent #d9bf8f transparent transparent  ;
   left: -42px;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .burger {
+        display: block;
+    }
+    .main-menu {
+        display: none;
+    }
 }
 
