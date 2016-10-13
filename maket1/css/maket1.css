@@ -1,12 +1,13 @@
 @import "../../normalize.css";
-*{
+
+    *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body{
 	font-size: 11px;
-    background-color: #f5dcf1;
+    /*background-color: #f5dcf1;*/
     font-family:'Lato', sans-serif;
 }
 a{
@@ -14,8 +15,9 @@ a{
     color: #000;
 }
 a:active,
-a:hover {
-  outline-width: 0;
+a:hover,
+a:focus{
+    outline-width: 0;
 }
 ul{
 	list-style: none;
@@ -143,6 +145,19 @@ li{
 	min-height: 128px;
     padding: 0 10px;
 }
+/*.header-bottom:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 60px solid #fff;
+    z-index: 2;
+    margin: auto;
+}*/
 .header-bottom .nav-menu,
 .header-bottom .wrapper-logo,
 .hader-bottom .social-and-rupian{
@@ -164,7 +179,9 @@ li{
     display: inline-block;
     margin-right: 20px;
 }
-
+.header-bottom .nav-menu li a:hover{
+   border-bottom: 2px solid #d9bf8f ;
+}
 .header-bottom .nav-menu li:nth-child(4){
     margin-right: 0;
 }
@@ -176,34 +193,13 @@ li{
     color: #000;
     font-weight: 100;
 }
-/*.header-bottom .logo{
-	width: 400px;
-    height: 128px;
-    background: #fff;
-    position: relative;
-    margin:auto;
-	font-family: 'krinkes_decor_personal_useRg';
-	text-align: center;
-	color: #000;
-	font-weight: 100;
-}*/
+
 .header-bottom .logo span{
 	font-size: 72px;
 	padding-top: 31px;
     display: block;
 }
-/*.header-bottom .logo:after {
-   	content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: -60px;
-    left: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-top: 60px solid #fff;
-    z-index: 2;
-}*/
+
 .header-bottom .social{
     float: right;
     margin-top: 3px;
@@ -258,6 +254,20 @@ li{
     display: inline-block;
     margin-left: 11px;
 }
+.header-bottom::after{
+   content: "";
+    width: 0;
+    height: 0;
+    position: relative;
+    top: 128px;
+    display: block;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 60px solid #fff;
+    z-index: 2;
+    margin: auto;
+}
+
 /*SLIDER*/
 
 #wrapper-carousel {
@@ -265,8 +275,11 @@ li{
     max-width: 1340px;
     margin: 0 auto;
 }
-#wrapper-carousel .carousel{
+
+.carousel{
     position: relative;
+    background-size: cover; 
+    background-position: 50% 0;
 }
 #wrapper-carousel img{
     width: 100%;
@@ -291,13 +304,12 @@ li{
     margin: 0 4px;
 }
 #wrapper-carousel .wrapper-sale {
-   position: relative;
+    position: relative;
     width: 272px;
     border: 2px solid white;
     margin: 0 auto;
-    padding: 6px;
-    top: -300px;
-    
+    padding: 6px;    
+    margin-top: 139px;
 }
 #wrapper-carousel .sale{
     width: 100%;
@@ -305,6 +317,12 @@ li{
     text-transform: uppercase;
     text-align: center;
     padding: 26px;
+}
+.wrapper-sale::after{
+    content: '';
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
 }
 #wrapper-carousel .sale p.mid-season{
     font-size: 20px;
@@ -370,8 +388,27 @@ li{
     position: relative;
     top: -8px;
     left: 139px;
+
 }
-    
+.button-carousel{
+    background-color: #f09d66;
+    max-width: 190px;
+    margin: auto;
+    margin-top: 53px;
+    margin-bottom: 163px;
+    text-align: center;
+    padding: 16px 0;
+
+
+}
+.button-carousel-shop{
+   
+    /*text-decoration: none;*/
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
 
 
 /*BREADCRUMBS*/
@@ -387,8 +424,9 @@ li{
 .breadcrumbs3{
     float: left;
     background-color: #d9bf8f;
-    width: 400px;
+    max-width: 400px;
     position: relative;
+
 }
 .breadcrumbs2{
     background-color: #000;
@@ -401,9 +439,11 @@ li{
 }
 .breadcrumbs-text{
     padding-top: 20px;
+    display: inline-block;
 }
 
 .breadcrumbs-text h1{
+    margin: 0;
     font-size: 30px;
     font-family:'Lato', sans-serif;
     font-weight: bold;
@@ -426,7 +466,7 @@ li{
     position: absolute;
     top: 50%;
     margin-top: -44px;
-    border-width: 44px 0 44px 42px;
+    border-width: 45px 0 44px 42px;
     border-style: solid;
     border-color:#000 #000 #000 transparent;
     left: -42px;
@@ -437,7 +477,7 @@ li{
     top: 50%;
     margin-top: -44px;
     border-top: 44px solid #000;
-    border-bottom: 44px solid #000;
+    border-bottom: 45px solid #000;
     border-right: 42px solid transparent;
     right: -42px;
 }
