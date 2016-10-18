@@ -24,8 +24,43 @@ $(".burger").on('click',function(){
 	});
 
 $(window).on('resize', function(){
+		
+
 		if ($(window).width() > 650) {
 			$('.mobile-menu').css('display', 'none');
 			$('.burger').removeClass('active');
 		}
+
+
+		if ($(window).width() < 1295) {
+
+			$('.grid').masonry({
+			  // options
+			  itemSelector: '.grid-item',
+			  columnWidth: '.grid-item',
+			  percentPosition: true
+			});
+
+		}
+		else {
+			$('.grid').masonry({
+			  // options
+			  itemSelector: '.grid-item',
+			  columnWidth: 1
+			});
+
+		}
+
+
 	});
+
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 1
+});
+
+
+ // itemSelector: '.grid-item',
+ //  columnWidth: '.grid-item',
+ //  percentPosition: true
