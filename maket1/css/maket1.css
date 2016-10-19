@@ -399,7 +399,6 @@ li{
     max-width: 1290px;
     min-height: 100px;
     margin-top: 63px;
-    margin-bottom: 85px;
 }
     .breadcrumbs1{
     padding: 21px 76px 19px 28px;
@@ -483,8 +482,44 @@ li{
   border-color: transparent #d9bf8f transparent transparent  ;
   left: -42px;
 }
+/*HEADING*/
+.heading{
+    text-align: center;
+    margin-top: 101px;  
+    margin-bottom: 63px;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style:italic;
+    font-size: 29.58px;
+}
+.heading::after{
+        content: '';
+    width: 11px;
+    height: 11px;
+    transform: rotate(-45deg);
+    color: black;
+    background-color: #d9bf8f;
+    margin-top: -23px;
+    display: inline-block;
+    position: absolute;
+    margin-left: -160px;
+}
+.heading::before{
+    content: '';
+    width: 11px;
+    height: 11px;
+    transform: rotate(-45deg);
+    color: black;
+    background-color: #d9bf8f;
+    margin-top: 12px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 162px;
+}
 
-/*MASONRE*/
+/*MASONRY*/
 .wrapper-masonry{
     max-width: 1295px;
     margin: auto;
@@ -502,46 +537,49 @@ li{
     margin-left: 19px;
     margin-right: 16px;
  }
- .border-masonry{
+[class^="border-masonry"]{
     position: absolute;
-    width: 354px;
-    height: 341px;
     margin: 27px 23px 32px;
     border: 3px solid white;
     right: 0;
     top: 0;
  }
-
-.hover-masonry {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.2);
+.border-masonry{
     width: 354px;
     height: 341px;
-    transition: all .5s;
+}
+
+ .border-masonry-width2{
+    width: 414px;
+    height: 761px;
+ }
+
+[class^="hover-masonry"]{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.24);
+    /*transition: all .5s;*/
     text-align: center;
     margin: 27px 23px 32px;
     padding-top: 20px;
 }
+.hover-masonry{
+    width: 354px;
+    height: 341px;
+}
+.hover-masonry-width2{
+    width: 414px;
+    height: 761px;
+}
+
+
 .masonry.width2 {
     position: absolute;
     padding-top: 20px;
     width: 100%;
     height: 100%;
-    right: 0;
-    top: 0;
-   
 }
-.text.width2{
-    display: block;
-    width: 1px;
-    height: 60px;
-    background-color: #f0975c;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -1px;
-    margin-top: -41px;
-}
+
+
 .title-masonry {
     display: block;
     width: 1px;
@@ -576,10 +614,18 @@ li{
     margin-left: -13px;
 }
 
+
+.hover-masonry-width2 .btn-masonry {
+    margin-top: 465px;
+}
 .grid-item:hover .border-masonry{
     display: none;
 }
-.grid-item:hover .hover-masonry{
+.grid-item:hover .border-masonry-width2{
+    display: none;
+}
+.grid-item:hover .hover-masonry,
+.grid-item:hover .hover-masonry-width2{
     right: 0;
     top: 0;
 }
@@ -587,14 +633,14 @@ li{
 
 
 @media screen and (max-width: 1310px){
-.grid-item { 
-    width: 33.3%;
-    margin-bottom: 0;
-}
-.grid-item.width2 {
-    width: 33.3%; 
-    margin-left: 0;
-    margin-right: 0;
+    .grid-item { 
+        width: 33.3%;
+        margin-bottom: 0;
+    }
+    .grid-item.width2 {
+        width: 33.3%; 
+        margin-left: 0;
+        margin-right: 0;
     }
 
     div.grid-item img{
@@ -602,8 +648,44 @@ li{
         width: 100%;
         vertical-align: middle;
     }
+    [class^="border-masonry"]{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        height: 90%;
+        border: 2px solid white;
+        top: 5%;
+        left: 5%;
+    }
+    .grid-item:hover [class^="hover-masonry"] {
+        height: 90%;
+        width: 90%;
+        text-align: center;
+        padding: 0; 
+        margin: 0;
+        top: 5%;
+        right: 5%;
+       
+    }
+        .hover-masonry .btn-masonry {
+        margin: 0;
+        margin-top: 75%;
+        font-size: 13px;
 
+    }
+        .hover-masonry-width2 .btn-masonry{
+        margin: 0;
+        margin-top:120%;
+        font-size: 13px;
+
+    }
+
+
+ 
 }
+
+
 
 
 
@@ -616,6 +698,7 @@ li{
         width: 33.3%;
         margin: 0;
         padding: 20px 0 20px 20px;
+
     }
     .breadcrumbs1::after,
     .breadcrumbs2::after,
@@ -683,10 +766,21 @@ li{
         
     }
     .breadcrumbs-img {
-    padding-right: 5px;
-}
+        padding-right: 5px;
+    }
 
+/*    .hover-masonry .btn-masonry {
+        margin: 0;
+        margin-top: 75%;
+        font-size: 13px;
 
+    }
+        .hover-masonry-width2 .btn-masonry{
+        margin: 0;
+        margin-top:120%;
+        font-size: 13px;
+
+    }*/
 }
 @media screen and (max-width: 900px) {
     .header-bottom {
@@ -707,7 +801,7 @@ li{
         width: 37%;
     }
      .header-bottom .social-and-rupian {
-        padding: 20px 0; 
+        padding: 19px 0; 
     }
     .header-bottom .social {
         clear: both;
@@ -750,18 +844,13 @@ li{
     .breadcrumbs3{
         padding: 20px 0 20px 10px;
     }
-   /* .breadcrumbs-img {
-    padding-right: 15px;
-    }*/
     .breadcrumbs-text h1 {
-    font-size: 20px;
+        font-size: 20px;
     }
     .breadcrumbs-text p {
-    font-size: 13px;
-}
+        font-size: 13px;
+    }
    
-
-
 }
 @media all and (max-width: 800px) {
     .breadcrumbs1,
@@ -770,6 +859,7 @@ li{
         width: 100%;
         margin: 0;
         margin-bottom: 20px;
+        float: none;
     }
     .breadcrumbs3{
         margin-bottom: 0;
@@ -777,11 +867,9 @@ li{
     .wrapper-breadcrumbs {
         margin-top: 20px;
     }
-
-
     .wrapper-masonry{
         position: relative;
-        top: 160px;
+        top: 30px;
     }
     .grid-item { 
         width: 50%;
@@ -791,8 +879,7 @@ li{
         width: 50%; 
         margin-left: 0;
         margin-right: 0;
-        }
-
+    }
     div.grid-item img{
         padding: 1%;
         width: 100%;
@@ -817,6 +904,9 @@ li{
     .nav-header-main li:nth-child(2)::after, 
     .nav-header-main li:nth-child(3):after {
         left: 18px;
+    }
+    .btn-masonry{
+        margin-top: 68%;
     }
 }   
 
@@ -867,6 +957,18 @@ li{
     .social-and-rupian [class^="social-link"]{
         margin-right: 3px;
         
+    }
+    .title-masonry {
+        width: 1px;
+        height: 40px;
+        margin-left: -1px;
+        margin-top: -41px;
+    }
+
+    .title-masonry::after {
+        height: 1px;
+        width: 40px;
+        margin-left: -20px;
     }
 }
 @media all and (max-width: 460px) {
@@ -927,4 +1029,18 @@ li{
     .breadcrumbs-text p {
         font-size: 12px;
     }
+    .hover-masonry .btn-masonry,
+    .hover-masonry-width2 .btn-masonry{
+         padding: 8px 10px 8px;
+         font-size: 11px;   
+    }
+
+   
+}
+
+@media all and (max-width: 383px) {
+   /* .title-masonry {
+       width: 2px;
+    }*/
+
 }
