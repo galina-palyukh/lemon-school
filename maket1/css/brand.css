@@ -1,0 +1,35 @@
+/*BRAND*/
+.wrapper-brand{
+    max-width: 1295px;
+    margin: auto;
+    margin-top: 60px;
+}
+.brand-list {
+    display: block;
+    font-size: 0;
+}
+.brand-list-item {
+    display: inline-block;
+    text-align: center;
+    width: 16.6666%;
+}
+@media screen and (max-width: 996px) {
+    .brand-list-item {
+        width: 33.33333%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .brand-list-item {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .brand-list-item {
+        width: 100%;
+    }
+}
+.brand-image {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
