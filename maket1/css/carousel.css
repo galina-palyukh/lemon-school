@@ -24,11 +24,9 @@
 #wrapper-carousel .slick-active button::before {
     background-color: #000;
 }
-
 #wrapper-carousel .slick-dots li {
     margin: 0 4px;
 }
-
 .wrapper-sale {
     position: relative;
     width: 272px;
@@ -36,7 +34,6 @@
     margin: 139px auto 0;
     padding: 6px;
 }
-
 .sale {
     width: 100%;
     border: 1px solid white;
@@ -44,39 +41,33 @@
     text-align: center;
     padding: 26px;
 }
-
 .wrapper-sale::after {
     content: '';
     height: 100%;
     width: 0;
     vertical-align: middle;
 }
-
 .mid-season {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     color: #fff;
 }
-
 h1 {
     font-size: 59px;
     margin: 31px 0 25px 0;
 }
-
 .text {
     color: #fff;
     font-size: 19px;
     font-weight: 700;
 }
-
 .procent {
     font-size: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     margin-top: 14px;
 }
-
 .sale .border-left-season::after {
     content: '';
     height: 1px;
@@ -116,16 +107,11 @@ h1 {
     top: -8px;
     left: 139px;
 }
-
 .button-carousel {
     margin-top: 53px;
     margin-bottom: 163px;
     text-align: center;
-    /*padding: 16px 0;*/
 }
-
-
-
 .button-carousel-shop {
     font-size: 24px;
     font-weight: bold;
@@ -138,10 +124,40 @@ h1 {
 @media screen and (max-width: 768px) {
     .button-carousel {
         margin-bottom: 60px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .wrapper-sale {
         margin-top: 50px;
+    }
+    .button-carousel-shop {
+        font-size: 18px;
+        padding: 8px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    .procent {
+        font-size: 20px;
+    }
+    .sale {
+        padding: 15px;
+    }
+    .sale .border-left-season::before {
+        left: 10px;
+    }
+    .sale .border-left-season::after {
+        left: 43px;
+    }
+    .border-right-season:before {
+        left: 150px;
+    }
+    .border-right-season::after {
+        left: 145px;
+    }
+}
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 31px;
     }
 }
 

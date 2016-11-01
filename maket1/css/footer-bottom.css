@@ -1,0 +1,88 @@
+.background-footer-bottom{
+	background-color:#141414;
+	padding-bottom: 79px;
+}
+.wrapper-footer-bottom {
+    max-width: 1291px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    font-size: 0;
+    border-top: 1px solid #363636;
+    position: relative;
+
+}
+.wrapper-footer-bottom::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: block;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 10px solid #363636;;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wrapper-footer-bottom-title{
+	font-size: 11px;
+	color: #363636;
+	margin-top: 30px;
+}
+.bottom-title{
+	margin-bottom: 8px;
+}
+.bottom-title:last-child{
+	margin-bottom: 0;
+}
+
+/*link*/
+.footer-payment-item-links{
+    margin-top: 26px;
+}
+.footer-payment-link {
+    margin-right: 22px;
+}
+.footer-payment-link-discover{
+	margin-right: 0;
+}
+.footer-payment-link::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.footer-payment-link::after {
+    content: '';
+    background-image: url(../images/footer-sprite-bottom.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.footer-payment-link-visa::after {
+    width: 30px;
+    height: 20px;
+    background-position: 1px 0px;
+}
+.footer-payment-link-mcard::after {
+    width: 30px;
+    height: 20px;
+    background-position: -30px 0px;
+}
+.footer-payment-link-amexspress::after {
+    width: 30px;
+    height: 20px;
+    background-position: -60px -3px;
+}
+.footer-payment-link-discover::after {
+    width: 30px;
+    height: 20px;
+    background-position: -91px -3px;
+}
+.footer-after {
+    min-height: 40px;
+    background-color: #000;
+}
+
+

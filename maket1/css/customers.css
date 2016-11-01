@@ -76,20 +76,6 @@ h3{
 .paragraph2{
     display: none;
 }
-/*@media screen and (max-width: 1130px) {
-    .custumers-left,
-    .custumers-right{
-        width: 49%;
-    } 
-    .customer-description-right,
-    .customer-description-left{
-        width: 40%;
-    }
-    .customer-image-right,
-    .customer-image-left{
-        width: 60%;
-    }
-}*/
 @media screen and (max-width: 1120px) {
     .custumers-left,
     .custumers-right{
@@ -114,9 +100,7 @@ h3{
     .paragraph2{
         display: block;
     }
-    
 }
-
 @media screen and (max-width: 1050px) {
     .custumers-left,
     .custumers-right{
@@ -133,7 +117,6 @@ h3{
     .customer-image-right img{
         float: right;
     }
-
 }
 @media screen and (max-width: 1020px) {
     .customer-description-right,
@@ -144,7 +127,6 @@ h3{
     .customer-image-left{
         width: 67%;
     }
-
 }
 @media screen and (max-width: 980px) {
     .custumers-left,
@@ -167,7 +149,7 @@ h3{
     h3 {
         margin-top: 30px;
         margin-bottom: 10px;
-        }
+    }
 }
  @media screen and (max-width: 840px) {
     .customer-image{
@@ -188,7 +170,6 @@ h3{
     }
 } 
 @media screen and (max-width: 730px) {
-    
     .customer-description-right,
     .customer-description-left{
         width: 80%;
@@ -211,7 +192,6 @@ h3{
         width: 70%;
         margin: auto;
         float: none;
-
     } 
 }
 @media screen and (max-width: 660px) {
@@ -267,8 +247,7 @@ h3{
     .customer-description-left span {
         font-size: 12px;
     }
-    .tringle-customers::after {
-       
+    .tringle-customers::after { 
         border-left: 137px solid transparent;
         border-right: 137px solid transparent;
         border-top: 25px solid #ffffff;
