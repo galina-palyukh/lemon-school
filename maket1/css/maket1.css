@@ -1,9 +1,14 @@
 @import "normalize.css";
-@import "slider.css";
+@import "carousel.css";
 @import "breadcrumbs.css";
 @import "masonry.css";
 @import "gallery.css";
 @import "brand.css";
+/*@import "customers.css";*/
+@import "sergey.css";
+@import "footer.css";
+
+
 * {
     margin: 0;
     padding: 0;
@@ -241,29 +246,18 @@ ul {
     background-position: -75px 4px;
 }
 
-.rupian {
+#rupian {
     float: right;
     background-color: #000;
     text-align: center;
     padding: 12px 10px;
-}
-
-.rupian span {
-    float: right;
     color: #fff;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 12px;
-}
-
-.rupian span::after {
-    content: "";
-    background: url(../images/sprite.png) no-repeat -81px -54px;
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    margin-left: 11px;
+    border: none;
+    outline: none;
 }
 
 .header-bottom::before {
@@ -280,11 +274,6 @@ ul {
     left: 50%;
     transform: translateX(-50%);
 }
-
-
-/*SLIDER*/
-
-
 
 
 /*HEADING*/
@@ -351,28 +340,8 @@ h2 {
 }
 
 
-/*MASONRY*/
-
 @media screen and (max-width: 1305px) {
-    .breadcrumbs1,
-    .breadcrumbs2,
-    .breadcrumbs3 {
-        width: 33.3%;
-        margin: 0;
-        padding: 20px 0 20px 20px;
-    }
-    .breadcrumbs1::after,
-    .breadcrumbs2::after,
-    .breadcrumbs2::before,
-    .breadcrumbs3::before {
-        display: none;
-    }
-    .breadcrumbs-text h1 {
-        font-size: 28px;
-    }
-    .breadcrumbs-img {
-        padding-right: 15px;
-    }
+
     .span-border-left {
         display: none;
     }
@@ -382,9 +351,6 @@ h2 {
 }
 
 @media screen and (max-width: 1130px) {
-    /*    .header-bottom {
-        min-height: 110px;
-    }*/
     .header-bottom::before {
         border-left: 150px solid transparent;
         border-right: 150px solid transparent;
@@ -400,9 +366,6 @@ h2 {
     .header-bottom .logo span {
         padding-top: 25px;
         font-size: 65px;
-    }
-    .breadcrumbs-text h1 {
-        font-size: 23px;
     }
 }
 
@@ -423,12 +386,6 @@ h2 {
     }
     .header-bottom .social {
         padding-right: 15px;
-    }
-    .breadcrumbs-img img {
-        width: 80%;
-    }
-    .breadcrumbs-img {
-        padding-right: 5px;
     }
 }
 
@@ -477,52 +434,15 @@ h2 {
         font-size: 55px;
         padding-top: 30px;
     }
-    .rupian {
+    #rupian {
         padding: 6px 8px;
         margin-bottom: 6px;
-    }
-    .rupian span {
-        font-size: 11px;
-    }
-    .rupian span::after {
-        margin-left: 6px;
-    }
-    .breadcrumbs1,
-    .breadcrumbs2,
-    .breadcrumbs3 {
-        padding: 20px 0 20px 10px;
-    }
-    .breadcrumbs-text h1 {
-        font-size: 20px;
-    }
-    .breadcrumbs-text p {
-        font-size: 13px;
     }
 }
 
 @media all and (max-width: 800px) {
-    .wrapper-breadcrumbs {
-        margin-bottom: 60px;
-    }
-    .breadcrumbs1,
-    .breadcrumbs2,
-    .breadcrumbs3 {
-        width: 100%;
-        margin: 0;
-        float: none;
-    }
-    .breadcrumbs3 {
-        margin-bottom: 0;
-    }
-    .breadcrumbs2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .wrapper-breadcrumbs {
-        margin-top: 35px;
-    }
     h2 {
-        font-size: 24px;
+        font-size: 27px;
     }
     .heading::before {
         margin-left: 120px;
@@ -565,9 +485,6 @@ h2 {
     }
     .header-top .telephone::before {
         margin-right: 7px;
-    }
-    .breadcrumbs-text h1 {
-        font-size: 21px;
     }
     .header-bottom::before {
         border-left: 130px solid transparent;
@@ -629,7 +546,7 @@ h2 {
         font-size: 26px;
         padding-top: 26px;
     }
-    .rupian {
+    #rupian {
         padding: 5px 7px;
     }
     .social-and-rupian [class^="social-link"] {
@@ -649,14 +566,8 @@ h2 {
     .social-link-inst {
         background-position: -79px -1px;
     }
-    .breadcrumbs-text h1 {
-        font-size: 18px;
-    }
-    .breadcrumbs-text p {
-        font-size: 12px;
-    }
     h2 {
-        font-size: 21px;
+        font-size: 23px;
     }
     .heading::before {
         margin-top: 7px;
@@ -666,4 +577,6 @@ h2 {
     }
 }
 
-@media all and (max-width: 320px) {}
+@media all and (max-width: 320px) {
+
+}

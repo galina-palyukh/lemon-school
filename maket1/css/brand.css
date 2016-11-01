@@ -2,7 +2,10 @@
 .wrapper-brand{
     max-width: 1295px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 65px;
+    margin-bottom: 97px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .brand-list {
     display: block;
@@ -12,6 +15,10 @@
     display: inline-block;
     text-align: center;
     width: 16.6666%;
+}
+.brand-list-item:hover{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+                0 0 40px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 996px) {
     .brand-list-item {
@@ -27,9 +34,9 @@
     .brand-list-item {
         width: 100%;
     }
-}
-.brand-image {
-    width: auto;
-    height: auto;
-    display: inline-block;
+    .brand-image {
+        width: auto;
+        height: auto;
+        display: inline-block;
+        }
 }

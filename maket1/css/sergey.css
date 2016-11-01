@@ -1,0 +1,188 @@
+.background-customers{
+    background-color: #d9bf8f;
+    margin-top: 65px;
+}
+.wrapper-custumers{
+    max-width: 1276px;
+    margin: auto;
+}
+.tringle-customers{
+	position: relative;
+}
+.tringle-customers::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -90px;
+    display: block;
+    border-left: 186px solid transparent;
+    border-right: 186px solid transparent;
+    border-top: 31px solid #ffffff;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.custumers-left,
+.custumers-right {
+    width: 49%;
+    margin: auto;
+    padding: 37px 0 47px 0;
+}
+.custumers-left {
+    display: inline-block;
+}
+.custumers-right {
+    float: right;
+}
+.customer-image-left {
+    float: left;
+    width: 40%;/*
+    background-size: cover;
+    background-position: 50% 0;*/
+}
+.customer-image-right {
+    float:right;
+    width: 40%;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.customer-image-right img {
+    float: right;
+}
+.customer-description-left{
+    float: left;
+}
+.customer-description-right{
+    text-align: right;
+}
+.customer-description-right,
+.customer-description-left{
+    padding-top: 93px;
+    width: 60%
+}
+.paragraph1,
+.paragraph2{
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #fff;
+    line-height: 30px;
+}
+h3{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 30px;
+    margin-top: 55px;
+    margin-bottom: 17px;
+}
+.customer-description-right span,
+.customer-description-left span{
+    font-size: 14px;
+    color: #7f7e7e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.paragraph2{
+    display: none;
+}
+@media screen and (max-width: 730px) {
+    
+    .customer-description-right,
+    .customer-description-left{
+        width: 80%;
+        padding-top: 20px;
+        margin: auto;
+    }
+    .customer-description-left{
+        margin-left: 10%;
+    }
+    .customer-description-right {
+        margin-right: 10%;
+        float: right;
+    }
+    h3 {
+        font-size: 23px;
+        margin-top: 20px;
+    }
+    .customer-image-right,
+    .customer-image-left{
+        width: 70%;
+        margin: auto;
+        float: none;
+
+    } 
+}
+@media screen and (max-width: 660px) {
+    .customer-image-right,
+    .customer-image-left {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .customer-image-right,
+    .customer-image-left {
+        width: 87%;
+    }
+    .paragraph1,
+    .paragraph2 {
+        font-size: 17px;
+    }
+    .customer-description-right span,
+    .customer-description-left span {
+        font-size: 13px;
+    }
+}
+    
+    @media screen and (max-width: 420px){
+    .custumers-left,
+    .custumers-right {
+        width: 100%;
+    }
+    .customer-image-right,
+    .customer-image-left {
+         width: 48%;
+    }
+    .custumers-right,
+    .custumers-left,
+    .customer-image-right img,
+    .customer-description-right {
+        float: none; 
+    }
+    .custumers-left-left{
+        padding: 50px 0 40px 0;
+    }
+    .custumers-left-right{
+        padding: 0 0 30px 0;
+    }
+    .paragraph1, .paragraph2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .customer-description-right span,
+    .customer-description-left span {
+        font-size: 12px;
+    }
+    .tringle-customers::after {
+       
+        border-left: 137px solid transparent;
+        border-right: 137px solid transparent;
+        border-top: 25px solid #ffffff;
+    }
+    .customer-description-right {
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+
+

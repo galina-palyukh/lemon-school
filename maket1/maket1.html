@@ -8,17 +8,16 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-        
+
+
         <link rel="stylesheet" href="css/maket1.css">
         <link rel="stylesheet" href="js/slick/slick.css">
-
         <link rel="stylesheet" href="js/slick/slick-theme.css">
         <!-- <link rel="stylesheet" href="../bootstrap.css"> -->
-        
 
     </head>
     <body>
-        <header>
+        <header id="header">
             <div class="wrapper-header-top">
                 <div class="header-top">
 
@@ -34,19 +33,18 @@
 
                     <nav class="main-menu">
                         <ul class="nav-header-main">
-                            <li> <a href="">welcome msg!</a></li>
-                            <li> <a href="">my account</a></li>
-                            <li> <a href="">my whistlist</a></li>
-                            <li> <a href="">login</a></li>
+                            <li> <a href="#">welcome msg!</a></li>
+                            <li> <a href="#">my account</a></li>
+                            <li> <a href="#">login</a></li>
                         </ul>
                     </nav>
                     
                     <nav class="mobile-menu">
                         <ul class="nav-header-mobile">
-                            <li> <a href="">welcome msg!</a></li>
-                            <li> <a href="">my account</a></li>
-                            <li> <a href="">my whistlist</a></li>
-                            <li> <a href="">login</a></li>
+                            <li> <a href="#">welcome msg!</a></li>
+                            <li> <a href="#">my account</a></li>
+                            <li> <a href="#">my whistlist</a></li>
+                            <li> <a href="#">login</a></li>
                         </ul>
                     </nav>
                 </div> 
@@ -68,10 +66,12 @@
                         </div>
                     </div>    
                     <div class="social-and-rupian">
-                        <div class="rupian">
-                            <span>rupian</span>
-                           
-                        </div>
+                        <form>
+                            <select name="country" id="rupian">
+                                <option value="inr">rupiah</option>
+                                <option value="us">dollar</option>
+                            </select>
+                        </form>
                         <div class="social">
                             <a href="#" class="social-link-fb"></a>
                             <a href="#" class="social-link-tw"></a>
@@ -90,7 +90,7 @@
                     <div class="sale"> 
                         <p class="mid-season">mid-season</p>
                         <h1>sale</h1>
-                        <span class="border-left"></span><span class="text">up to</span><span class="border-right"></span>
+                        <span class="border-left-season"></span><span class="text">up to</span><span class="border-right-season"></span>
                         <p class="procent">50% off</p>
                     </div>
                 </div>
@@ -178,8 +178,6 @@
         </div>
      
 
-
-
         <div class="wrapper-masonry"> 
            <div class="grid">
                 <div class="grid-item">
@@ -197,7 +195,7 @@
                     <div class="border-masonry-width2"></div>
                     <div class="hover-masonry-width2">
                         <span class="title-masonry"></span>
-                        <a href="#" class="btn-masonry">shop now</a>
+                        <a href="#" class="btn-masonry-width2">shop now</a>
                     </div>
                 </div>
 
@@ -239,168 +237,310 @@
         </div>
 
 
+        <div class="wrapper-gallery">
+            <ul class="gallery-list">
+                <li class="gallery ">
+                    <div class="gallery-link">
+                        <img src="images/gallery1.jpg" class="gallery-img" title="" alt="">
+                        <div class="gallery-opacity"></div>
+                        <div class="gallery-sale">
+                            <div class="gallery-sale-procent"> 20 
+                                <span>%</span>
+                           </div>
+                        </div>
 
-
-
-    <div class="wrapper-gallery">
-        <ul class="gallery-list">
-            <li class="gallery ">
-                <a href="#" class="gallery-link" title="">
-                    <img src="images/gallery1.jpg" class="img-responsive" title="" alt="">
-                    <div class="gallery-opacity"></div>
-                    <div class="gallery-sale">
-                        <div class="gallery-sale-procent"> 20 
-                            <span>%</span>
-                       </div>
+                        <a href="#">
+                            <div class="gallery-basket">
+                                <span>+ add to cart</span>
+                            </div>
+                        </a>
                     </div>
+                 </li>
 
-                    <a href="#">
-                        <div class="gallery-basket">
-                            <span>+ add to cart</span>
-                        </div>
-                    </a>
-                </a>
-             </li>
-
-            <li class="gallery">
-                <a href="#" class="gallery-link" title="">
-                    <img src="images/gallery2.jpg" class="img-responsive" title="" alt="">
-                    <div class="gallery-opacity"></div>
-                    <a href="#">
-                        <div class="gallery-basket">
-                            <span>+ add to cart</span>
-                        </div>
-                    </a>
-                </a>
-             </li>
-
-            <li class="gallery">
-                <a href="#" class="gallery-link" title="">
-                    <img src="images/gallery3.jpg" class="img-responsive" title="" alt="">
-                    <div class="gallery-opacity"></div>
-                    <a href="#">
-                        <div class="gallery-basket">
-                            <span>+ add to cart</span>
-                        </div>
-                    </a>
-
-                </a>
-             </li>
-
-             <li class="gallery">
-                <a href="#" class="gallery-link" title="">
-                    <img src="images/gallery4.jpg" class="img-responsive" title="" alt="">
-                    <div class="gallery-opacity"></div>
-                    <div class="gallery-sale">
-                        <div class="gallery-sale-procent"> 40 
-                            <span>%</span>
-                       </div>
+                <li class="gallery">
+                    <div class="gallery-link">
+                        <img src="images/gallery2.jpg" class="gallery-img" title="" alt="">
+                        <div class="gallery-opacity"></div>
+                        <a href="#">
+                            <div class="gallery-basket">
+                                <span>+ add to cart</span>
+                            </div>
+                        </a>
                     </div>
-                    <a href="#">
-                        <div class="gallery-basket">
-                            <span>+ add to cart</span>
-                        </div>
-                    </a>
-                </a>
-             </li>
+                 </li>
 
-             <li class="gallery">
-                <a href="#" class="gallery-link" title="">
-                    <img src="images/gallery5.jpg" class="img-responsive" title="" alt="">
-                    <div class="gallery-opacity"></div>
-                    <div class="gallery-sale">
-                        <div class="gallery-sale-procent"> 20 
-                            <span>%</span>
-                       </div>
+                <li class="gallery">
+                    <div class="gallery-link">
+                        <img src="images/gallery3.jpg" class="gallery-img" title="" alt="">
+                        <div class="gallery-opacity"></div>
+                        <a href="#">
+                            <div class="gallery-basket">
+                                <span>+ add to cart</span>
+                            </div>
+                        </a>
                     </div>
-                    <a href="#">
-                        <div class="gallery-basket">
-                            <span>+ add to cart</span>
+                 </li>
+
+                 <li class="gallery">
+                    <div class="gallery-link">
+                        <img src="images/gallery4.jpg" class="gallery-img" title="" alt="">
+                        <div class="gallery-opacity"></div>
+                        <div class="gallery-sale">
+                            <div class="gallery-sale-procent"> 40 
+                                <span>%</span>
+                           </div>
                         </div>
-                    </a>
-
-                </a>
-             </li>
-
-             <li class="gallery">
-                <a href="#" class="gallery-link" title="">
-                    <img src="images/gallery6.jpg" class="img-responsive" title="" alt="">
-                    <div class="gallery-opacity"></div>
-                    <a href="#">
-                        <div class="gallery-basket">
-                            <span>+ add to cart</span>
-                        </div>
-                    </a>
-                </a>
-             </li>
-
-             <li class="gallery">
-                <a href="#" class="gallery-link" title="">
-                    <img src="images/gallery7.jpg" class=" img-responsive" title="" alt="">
-                    <div class="gallery-opacity"></div>
-                    <a href="#">
-                        <div class="gallery-basket">
-                            <span>+ add to cart</span>
-                        </div>
-                    </a>
-                </a>
-             </li>
-
-             <li class="gallery">
-                <a href="#" class="gallery-link" title="">
-                    <img src="images/gallery8.jpg" class=" img-responsive" title="" alt="">
-                    <div class="gallery-opacity"></div>
-                    <div class="gallery-sale">
-                        <div class="gallery-sale-procent"> 40 
-                            <span>%</span>
-                       </div>
+                        <a href="#">
+                            <div class="gallery-basket">
+                                <span>+ add to cart</span>
+                            </div>
+                        </a>
                     </div>
-                    <a href="#">
-                        <div class="gallery-basket">
-                            <span>+ add to cart</span>
-                        </div>
-                    </a>
+                 </li>
 
-                </a>
-             </li>
-        </ul>
+                 <li class="gallery">
+                    <div class="gallery-link">
+                        <img src="images/gallery5.jpg" class="gallery-img" title="" alt="">
+                        <div class="gallery-opacity"></div>
+                        <div class="gallery-sale">
+                            <div class="gallery-sale-procent"> 20 
+                                <span>%</span>
+                           </div>
+                        </div>
+                        <a href="#">
+                            <div class="gallery-basket">
+                                <span>+ add to cart</span>
+                            </div>
+                        </a>
+                    </div>
+                 </li>
+
+                 <li class="gallery">
+                    <div class="gallery-link" >
+                        <img src="images/gallery6.jpg" class="gallery-img" title="" alt="">
+                        <div class="gallery-opacity"></div>
+                        <a href="#">
+                            <div class="gallery-basket">
+                                <span>+ add to cart</span>
+                            </div>
+                        </a>
+                    </div>
+                 </li>
+
+                 <li class="gallery">
+                    <div class="gallery-link">
+                        <img src="images/gallery7.jpg" class="gallery-img" title="" alt="">
+                        <div class="gallery-opacity"></div>
+                        <a href="#">
+                            <div class="gallery-basket">
+                                <span>+ add to cart</span>
+                            </div>
+                        </a>
+                    </div>
+                 </li>
+
+                 <li class="gallery">
+                    <div class="gallery-link">
+                        <img src="images/gallery8.jpg" class="gallery-img" title="" alt="">
+                        <div class="gallery-opacity"></div>
+                        <div class="gallery-sale">
+                            <div class="gallery-sale-procent"> 40 
+                                <span>%</span>
+                           </div>
+                        </div>
+                        <a href="#">
+                            <div class="gallery-basket">
+                                <span>+ add to cart</span>
+                            </div>
+                        </a>
+                    </div>
+                 </li>
+            </ul>
+        </div>
+
+
+        <div class="heading">
+            <span class="span-border-left"> </span>
+            <h2>Our Brand</h2>              
+            <span class="span-border-right"></span>
+        </div>
+
+
+        <div class="wrapper-brand">
+            <ul class="brand-list">
+                <li class="brand-list-item">
+                    <img src="images/brand1.png" class="brand-image" title="" alt="">
+                </li>
+
+                <li class="brand-list-item">
+                    <img src="images/brand2.png" class="brand-image" title="" alt="">
+                </li>
+
+                <li class="brand-list-item ">
+                    <img src="images/brand3.png" class="brand-image" title="" alt="">
+                </li>
+
+                <li class="brand-list-item ">
+                    <img src="images/brand4.png" class="brand-image" title="" alt="">
+                </li>
+
+                <li class="brand-list-item ">
+                    <img src="images/brand5.png" class="brand-image" title="" alt="">
+                </li>
+
+                <li class="brand-list-item ">
+                    <img src="images/brand6.png" class="brand-image" title="" alt="">
+                </li>
+
+            </ul>
+        </div>
+
+
+
+
+        <div class="tringle-customers">
+            <div class="heading ">
+                <span class="span-border-left"> </span>
+                <h2>Customers Says</h2>              
+                <span class="span-border-right"></span>
+            </div>
+        </div>
+
+
+
+
+    <div class="background-customers"> 
+        <div class="wrapper-custumers">
+
+            <div class="custumers-left">
+                <div class="customer-image-left">
+                    <img src="images/customersWoman.png" class="customer-image" alt="">
+                </div>
+                <div class="customer-description-left">
+                    <p class="paragraph1">Sed ut perspiciatis<br>unde omnis iste natus error sit<br>voluptatem accusantium doloremque</p>
+                    <p class="paragraph2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+
+                    <h3>Sandra Dewi</h3>
+                    <span>fasion stylish</span>
+                </div>
+            </div>
+            <div class="custumers-right">
+            <div class=" customer-image-right">
+                    <img src="images/customersMen.png" class="customer-image" alt="">
+               </div>
+                <div class="customer-description-right">
+                    <p class="paragraph1">Sed ut perspiciatis<br>unde omnis iste natus error sit<br>voluptatem accusantium doloremque</p>
+                    <p class="paragraph2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+
+                    <h3>Shaheer Sheikh</h3>
+                    <span>designer</span>
+                </div>
+                
+            </div>
+        </div>
     </div>
+    
+    <div class="background-footer-top">
+        <div class="wrapper-footer-top">
+            <div class="footer_block">
+                <h4>shops</h4>
+                <ul class="footer_links">
+
+                    <li><a class="footer-link"  href="#" title="">New In</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Women</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Men</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Shoes</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Bags &amp; Accessories</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Top Brands</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Sale &amp; Special Offers</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Lookbook</a></li>
+                </ul>
+            </div>
 
 
-    <div class="heading">
-        <span class="span-border-left"> </span>
-        <h2>Our Brand</h2>              
-        <span class="span-border-right"></span>
+            
+
+            <div class="footer_block">
+                <h4>information</h4>
+                <ul class="footer_links">
+
+                    <li><a class="footer-link"  href="#" title="">About us</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Customer Service</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">New Collection</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Best Selers</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Manufacturers</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Privacy policy</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Terms &amp; condition</a></li>
+                    <li><a class="footer-link" href="#" title="">Blog</a></li>
+                    
+                </ul>
+            </div>
+
+
+
+            <div class="footer_block">
+                <h4>customer service</h4>
+                <ul class="footer_links">
+
+                    <li><a class="footer-link"  href="#" title="">Search Terms</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Advanced Search</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Orders and Returns</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Contact Us</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">RSS</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Help &amp; FAQs</a></li>
+                    
+                    <li><a class="footer-link" href="#" title="">Consultant</a></li>
+
+                    <li><a class="footer-link" href="#" title="">Store Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_block-social-links">
+            <div class="wrapper-footer-links">
+                <h4 class="header-link">syay connected</h4>
+                <div class="footer-item-links">
+                    <a href="#" class="footer-social-link footer-social-link-fb"></a>
+                    <a href="#" class="footer-social-link footer-social-link-tw"></a>
+                    <a href="#" class="footer-social-link footer-social-link-pi"></a>
+                    <a href="#" class="footer-social-link footer-social-link-inst"></a>
+                    <a href="#" class="footer-social-link footer-social-link-rss"></a>
+                </div>
+            </div>
+            <div class="wrapper-footer-form">
+                <p class="footer-title-subscribe">subscribe &nbsp;<span class="title-subscribe-span">in</span>&nbsp; our news letter</p>
+                <form autocomplete="off">
+                    <div class="footer-form">
+                        <input class="footer-form-input" type="email" id="email" name="email" placeholder="Enter Your Email Address">
+                        <button class="footer-form-btn" type="submit">Subscribe</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
     </div>
+   <!--  <div class="background-footer-bottom">
+        <div class="wrapper-footer-bottom">
+        </div>
+    </div> -->
 
-    <div class="wrapper-brand">
-        <ul class="brand-list">
-            <li class="brand-list-item">
-                <img src="images/brand1.png" class="brand-image" title="" alt="">
-            </li>
-
-            <li class="brand-list-item">
-                <img src="images/brand2.png" class="brand-image" title="" alt="">
-            </li>
-
-            <li class="brand-list-item ">
-                <img src="images/brand3.png" class="brand-image" title="" alt="">
-            </li>
-
-            <li class="brand-list-item ">
-                <img src="images/brand4.png" class="brand-image" title="" alt="">
-            </li>
-
-            <li class="brand-list-item ">
-                <img src="images/brand5.png" class="brand-image" title="" alt="">
-            </li>
-
-            <li class="brand-list-item ">
-                <img src="images/brand6.png" class="brand-image" title="" alt="">
-            </li>
-
-        </ul>
-    </div>
 
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
