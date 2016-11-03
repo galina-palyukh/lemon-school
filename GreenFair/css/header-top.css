@@ -1,0 +1,28 @@
+.wrapper-header-top{
+	color: #393939;
+    background-color: #fbfbfb;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 0 3px 1px  rgba(155,155,155,155.20); 
+
+}
+.header-top{
+	max-width: 1534px;
+	margin: auto;
+	font-size: 12px;
+}
+.home,
+.phone{
+	display: inline-block;
+}
+.home::after{
+	content: '';
+	display: inline-block;
+    background: url('../images/header-top/icon-home.png') no-repeat;
+    width: 10px;
+    height: 10px;
+    margin-right: 18px;
+
+	
+}
+
+
