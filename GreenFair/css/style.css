@@ -1,2 +1,9 @@
+@import "reset.css";
 @import "header-top.css";
 @import "header-bottom.css";
+@import "carousel.css";
+
+/*fonts*/
+@import "../fonts/Lato/stylesheet.css";
+@import "../fonts/OpenSans/stylesheet.css";
+@import "../fonts/RobotoSlab/stylesheet.css";

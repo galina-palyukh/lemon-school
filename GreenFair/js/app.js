@@ -18,18 +18,29 @@ $('#wrapper-carousel').slick({
 });
 
 
+
+
+
 $(".burger").on('click',function(){
 		$(this).toggleClass('active');
-		$('.mobile-menu').slideToggle(400);
+		$('.mobile-nav').slideToggle(400);
 	});
 
 $(window).on('resize', function(){
 		
 
-		if ($(window).width() > 650) {
-			$('.mobile-menu').css('display', 'none');
+		if ($(window).width() > 780) {
+			$('.mobile-nav').css('display', 'none');
 			$('.burger').removeClass('active');
 		}
+
+
+
+
+
+
+
+
 
 
 		if ($(window).width() < 1295) {

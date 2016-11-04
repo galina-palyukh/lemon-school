@@ -1,0 +1,118 @@
+#wrapper-carousel {
+    margin-bottom: 30px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+.carousel {
+    /*background-size: cover;*/
+    background-position:  0 -114px;
+}
+.carousel::before{
+	content: '';
+	display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 1;
+   
+}
+.carousel-title{
+	text-align: center;
+	margin: 252px 0;
+	color: #fff;
+	text-transform: uppercase;
+	z-index: 2;
+    /*position: relative;*/
+}
+.carousel-paragraph-top{
+	line-height: 72px;
+	font-size: 45px;
+	font-family: 'latoregular',serif;
+}
+.carousel-header{
+	font-family: 'latobold', serif;
+	font-size: 72px;
+	line-height: 90px;
+	letter-spacing: 0.025em;
+}
+.carousel-paragraph-bottom{
+	font-family: 'latoregular',serif;
+	line-height: 46px;
+	font-size: 20px;
+	letter-spacing: 0.025em;
+	margin-bottom: 54px;
+}
+.btn-carousel{
+	font-family: 'lato';
+    font-size: 14px;
+    padding: 21px 49px 21px 47px;
+    background-color: #101010;
+    color: #fff;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    border-radius: 2px;
+}
+#wrapper-carousel .slick-dots {
+    bottom: 25px;
+}
+#wrapper-carousel .slick-dots li button {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+#wrapper-carousel .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #fff;
+}
+#wrapper-carousel .slick-dots li button:before {
+    font-size: 14px;
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    height: 20px;
+    color: transparent;
+}
+#wrapper-carousel .slick-dots li button:hover:before {
+    color: #fff;
+}
+
+#wrapper-carousel .slick-dots li {
+     margin: 0;
+     } 
+
+@media screen and (max-width: 1200px){
+	.carousel-header {
+	    font-size: 60px;
+	}
+	.carousel-paragraph-top {
+	    font-size: 35px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.carousel-header {
+	    font-size: 50px;
+	}
+	.carousel-paragraph-top {
+	    font-size: 35px;
+	}
+}
+@media screen and (max-width: 770px){
+	.carousel-header {
+	    font-size: 40px;
+	}
+	.carousel-paragraph-top {
+	    font-size: 25px;
+	}
+	.carousel-paragraph-bottom {
+	    font-size: 18px;
+	}
+	.carousel-title {
+	    margin: 180px 0;
+	}
+}
+
