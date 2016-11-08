@@ -1,0 +1,136 @@
+.wrapper-green-fair {
+    max-width: 1242px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin: auto;
+    margin-top: 82px;
+}
+.green-fair-header{
+	font-family: 'roboto_slabbold';
+	font-size: 36px;
+	line-height: 90px;
+	text-transform: uppercase;
+	color: #393939;
+	letter-spacing: 1px;
+}
+.green-fair-paragraph{
+	font-family: 'open_sansregular';
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	color: #393939;
+}
+.systems-grid{
+	margin-top: 58px;
+	font-size: 0;
+}
+.system{
+	width: 303px;
+	display: inline-block;
+}
+[class*="system-image"]{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 29px;
+}
+.system-image1{
+	background-image: url(../images/green-fair/systems.png);
+    background-position: 0 0;
+}
+.system-image2{
+	background-image: url(../images/green-fair/systems.png);
+    background-position: -120px 0;
+}
+.system-image3{
+	background-image: url(../images/green-fair/systems.png);
+    background-position: -240px 0;
+}
+.system-image4{
+	background-image: url(../images/green-fair/systems.png);
+    background-position: -360px 0;
+}
+.system-name{
+	font-size: 18px;
+	font-family: 'roboto_slabbold';
+	color: #393939;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+	letter-spacing: 0.5px;
+}
+.system-description{
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'open_sansregular';
+	color: #646464;
+	padding: 0px 25px;
+}
+.system:hover .system-name{
+	color: #43a906;
+}
+.system:hover .system-image1{
+	background-image: url(../images/green-fair/systems.png);
+    background-position: 0 -120px;
+}
+.system:hover .system-image2{
+	background-image: url(../images/green-fair/systems.png);
+    background-position: -120px -120px;
+}
+.system:hover .system-image3{
+	background-image: url(../images/green-fair/systems.png);
+    background-position: -240px -120px;
+}
+.system:hover .system-image4{
+	background-image: url(../images/green-fair/systems.png);
+    background-position: -360px -120px;
+}
+@media screen and (max-width: 1230px) {
+	.system{
+		width: 25%;	
+	}
+}	
+@media screen and (max-width: 1020px) {
+	.system{
+		width: 50%;
+		margin-top: 40px;
+	}
+	.systems-grid {
+     	margin-top: 0; 
+	}
+	.green-fair-header {
+	    font-size: 30px;
+	}
+}	
+@media screen and (max-width: 600px) {
+	.green-fair-header {
+	    font-size: 25px;
+	}
+}
+@media screen and (max-width: 530px) {
+	.system{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 530px) {
+	.green-fair-header {
+	    font-size: 20px;
+	    letter-spacing: 0;
+	}
+	.system-name {
+    font-size: 16px;
+	}
+	.wrapper-green-fair {
+	    margin-top: 25px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.green-fair-header {
+	    font-size: 18px;
+	}
+	.system-name {
+    font-size: 14px;
+}
+	.system{
+		margin-top: 48px;
+	}
+}

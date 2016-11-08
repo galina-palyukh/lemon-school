@@ -2,8 +2,15 @@
 @import "header-top.css";
 @import "header-bottom.css";
 @import "carousel.css";
+@import "green-fair.css";
+@import "volunteer.css";
+@import "masonry.css";
+@import "achivement.css";
+@import "latest-event.css";
+
 
 /*fonts*/
 @import "../fonts/Lato/stylesheet.css";
 @import "../fonts/OpenSans/stylesheet.css";
 @import "../fonts/RobotoSlab/stylesheet.css";
+@import "../fonts/Roboto/stylesheet.css";

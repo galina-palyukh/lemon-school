@@ -1,4 +1,4 @@
-.header-bottom{
+.wrapper-header-bottom{
 	max-width: 1200px;
 	margin: auto;
 	padding-left: 15px;
@@ -9,7 +9,7 @@
 }
 .logo {
 	float: left;
-	padding: 28px 0 37px 0; 
+	padding: 28px 0 0 0; 
 }
 .main-nav {
 	float: right;
@@ -148,5 +148,17 @@
 	}
 	.logo {
 	    margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.img-logo{
+		width: 130px
+	}
+	.wrapper-header-bottom {
+	    min-height: 90px;
+	}
+	.serif {
+	    width: 70%;
+	    height: 2px;
 	}
 }

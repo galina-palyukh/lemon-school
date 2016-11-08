@@ -1,0 +1,102 @@
+.wrapper-masonry{
+	margin: auto;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 63px;
+}
+.masonry-header{
+	color: #222222;
+	font-size: 36px;
+	line-height: 90px;
+	font-family: 'roboto_slabbold';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.masonry-description{
+	font-family: 'open_sansregular';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #393939;
+    letter-spacing: 0.4px;
+    margin-bottom: 57px;
+}
+.masonry-buttons{
+	margin-bottom: 56px;
+	font-size: 0;
+}
+[class^="masonry-btn"]{
+	display: inline-block;
+	background-color: #f6f6f6;
+	border: 1px solid #e9e9e9;
+	color: #726e6e;
+	font-family: 'robotomedium';
+	font-size: 14px;
+	border-radius: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+
+.masonry-btn__show{
+	padding: 12px 25px 12px 26px;
+	letter-spacing: 0.5px;
+}
+.masonry-btn__environment{
+	padding: 12px 16px 12px 26px;
+	letter-spacing: 0.2px;
+}
+.masonry-btn__climate{
+	padding:  12px 21px 12px 22px;
+	letter-spacing: 0.5px;
+}
+.masonry-btn__photography{
+	padding: 12px 24px 12px 30px;
+	letter-spacing: 0.2px;
+}
+.masonry-btn__species{/*
+	margin-right: 0;*/
+	padding: 12px 21px 12px 19px;
+	letter-spacing: 0.5px;
+}
+[class^="masonry-btn"]:hover{
+	background-color: #43a906;
+	border: 1px solid #43a906;
+	color: #fff;
+}
+
+
+
+@media screen and (max-width: 730px) {
+	[class^="masonry-btn"]{
+		padding: 12px 0;
+		min-width: 160px;
+		margin-top: 30px;
+	}
+	.masonry-description{
+	    margin-bottom: 0;
+	}
+	.masonry-header{
+		font-size: 33px;
+		line-height: 0;
+		margin-bottom: 40px;
+	}
+}	
+@media screen and (max-width: 450px) {
+	.masonry-header{
+		font-size: 25px;
+	}
+}	
+
+
+
+
+
+
+
+
+
+
