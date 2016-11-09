@@ -5,7 +5,8 @@
     z-index: 0;
 }
 .carousel {
-    background-position:  0 -114px;
+    background-size: cover;
+    background-position: 0 0;
     position: relative;
 }
 .carousel:before{
@@ -17,11 +18,11 @@
     opacity: 0.3;
     position: absolute;
     z-index: 1;
-   
+  
 }
 .carousel-title{
 	text-align: center;
-	margin: 252px 0;
+	margin: 160px 0;
 	color: #fff;
 	text-transform: uppercase;
 	z-index: 2;

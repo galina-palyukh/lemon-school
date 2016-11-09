@@ -105,6 +105,9 @@
 	.green-fair-header {
 	    font-size: 25px;
 	}
+	.wrapper-green-fair {
+	    margin-top: 84px; 
+	}
 }
 @media screen and (max-width: 530px) {
 	.system{

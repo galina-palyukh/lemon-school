@@ -80,7 +80,11 @@
 	    max-width: 146px;
 	}
 }
-
+@media screen and (max-width: 600px){
+	.wrapper-volunteer {
+	    margin-top: 40px;
+	}
+}
 @media screen and (max-width: 450px){
 	.volunteer-header {
 	    font-size: 25px;

@@ -1,6 +1,6 @@
 .wrapper-masonry{
 	margin: auto;
-	max-width: 1200px;
+	max-width: 1210px;
 	padding-left: 15px;
 	padding-right: 15px;
 	text-align: center;
@@ -66,10 +66,73 @@
 	background-color: #43a906;
 	border: 1px solid #43a906;
 	color: #fff;
+} 
+.masonry-items {
+    height: 500px;
+}
+.masonry-sizer,
+.masonry-item {
+    width: 285px;
+    height: 285px;
+    float: left;
+    margin: 5px;
+    position: relative;
 }
 
+.masonry-item--width2 {
+    width: 580px;
+}
+.masonry-item--height2 {
+    height: 580px;
 
+}
+.masonry-item:hover .masonry-hover--width{
+    display: block;
+    width: 265px;
+    height: 265px;
+    background-color: #222;
+    opacity: 0.85;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+}
 
+.masonry-item:hover .masonry-hover--width2{
+    display: block;
+    width: 560px;
+    height: 265px;
+    background-color: #222;
+    opacity: 0.85;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+}
+.masonry-item:hover .masonry-hover--height2{
+    display: block;
+    width: 265px;
+    height: 560px;
+    background-color: #222;
+    opacity: 0.85;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+}
+[class^="masonry-hover"] {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 265px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: none;
+}
+.masonry-hover--height2{
+    line-height: 465px;
+}
 @media screen and (max-width: 730px) {
 	[class^="masonry-btn"]{
 		padding: 12px 0;
